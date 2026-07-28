@@ -183,6 +183,15 @@ h1 em {
   line-height: 1.7;
 }
 
+.about-section {
+  padding: clamp(4rem, 8vw, 7rem) 0;
+  border-top: 1px solid var(--line);
+}
+
+.about-copy {
+  margin-left: auto;
+}
+
 .projects-section {
   padding: clamp(4rem, 8vw, 7rem) 0;
   border-top: 1px solid var(--line);

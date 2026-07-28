@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Academic Projects",
+  title: "Cooper Portfolio",
   description:
-    "Academic projects in machine learning and interactive data visualization.",
+    "Cooper's portfolio in data analytics, business intelligence and machine learning.",
 };
 
 export default function RootLayout({

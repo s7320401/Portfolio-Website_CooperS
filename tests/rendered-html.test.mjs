@@ -28,6 +28,11 @@ test("renders both academic projects and the provided contact method", async () 
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
 
   const html = await response.text();
+  assert.match(html, /Cooper Portfolio/);
+  assert.match(html, /Master of IT in Business student at SMU/);
+  assert.match(html, /Data Analyst Intern at/);
+  assert.match(html, /Versuni/);
+  assert.match(html, /Data Analytics, Business Intelligence and Machine/);
   assert.match(html, /Retail Customer Churn Prediction/);
   assert.match(html, /Interactive Data Visualization Website/);
   assert.match(html, /Classification/);

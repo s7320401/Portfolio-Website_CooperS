@@ -26,13 +26,14 @@ export default function Home() {
   return (
     <main>
       <header className="site-header">
-        <a className="wordmark" href="#top" aria-label="Academic portfolio home">
+        <a className="wordmark" href="#top" aria-label="Cooper portfolio home">
           <span className="wordmark-mark" aria-hidden="true">
-            AP
+            CP
           </span>
-          <span>Academic Portfolio</span>
+          <span>Cooper Portfolio</span>
         </a>
         <nav aria-label="Primary navigation">
+          <a href="#about">About</a>
           <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>
         </nav>
@@ -55,6 +56,27 @@ export default function Home() {
           <p>
             Academic projects spanning machine learning and interactive data
             visualization.
+          </p>
+        </div>
+      </section>
+
+      <section
+        className="about-section"
+        id="about"
+        aria-labelledby="about-title"
+      >
+        <div className="section-heading">
+          <p>About</p>
+          <h2 id="about-title">Cooper</h2>
+        </div>
+        <div className="description about-copy">
+          <p>
+            Master of IT in Business student at SMU and Data Analyst Intern at
+            Versuni.
+          </p>
+          <p>
+            Interested in Data Analytics, Business Intelligence and Machine
+            Learning.
           </p>
         </div>
       </section>
@@ -157,7 +179,7 @@ export default function Home() {
       </section>
 
       <footer>
-        <span>Academic Portfolio</span>
+        <span>Cooper Portfolio</span>
         <span>Projects &amp; coursework</span>
       </footer>
     </main>
